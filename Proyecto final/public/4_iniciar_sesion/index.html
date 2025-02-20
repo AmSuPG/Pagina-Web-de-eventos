@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <header class="cabecera">
+        <img src="../img/logo_blanco.png" alt="logo_pag">
+    </header>
+    <a id="regresar_sin_login" href="../1_pag_sin_login/index.html">Regresar</a>
+    <form id="inicio_de_sesion">
+        <h1>¡Bienvenido/a! Inicia Sesión para acceder a la plataforma</h1>
+        <h2>Correo</h2>
+        <input id="correo_iniciar_sesion" type="email" placeholder="example@gmail.com.co" required>
+        <h2>Contraseña</h2>
+        <input id="contraseña_iniciar_sesion" type="password" required>
+        <ul>
+            <li><a href="#">Olvidaste la contraseña</a></li>
+        </ul>
+        <button id="iniciar_sesion" type="submit" onclick="redirigirPrincipal()">Ingresar</button>
+    </form>
+    <script src="../inicio_sesion.js"></script>
+    <script src="../emer_regis.js"></script>
+    <footer>
+        <img src="../img/logo_blanco.png" alt="logo_pag">
+        <img src="../img/redes.webp" alt="logo_pag">
+        <p>¡Gracias por visitarnos!</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

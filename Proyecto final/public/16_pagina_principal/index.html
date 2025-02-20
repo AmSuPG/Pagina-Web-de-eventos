@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Light On! | Página Principal </title>
+</head>
+<body>
+    <header>
+        <nav class="cabecera">
+            <img src="../img/logo_blanco.png" alt="logo_pag">
+            <button id="evento_formulario">Crear Evento</button>
+            <div id="usuario_boton">
+                <p>¡Bienvenid@!</p>
+                <a href="../15_perfil_usuario/index.html"><span class="material-symbols-outlined" id="icono_usuario">person</span></a>
+                <a href="../22_configuracion_perfil/index.html"><span class="material-symbols-outlined" id="icono_configuracion">settings</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="buscar">
+        <input class="busqueda" type="search" placeholder="Busca a tus artistas o eventos favoritos">
+    </div>
+    <h1>Eventos</h1>
+    <section id="eventos" class="eventos">
+        <div class="card-container" id="card-container">
+
+        </div>
+    </section>
+    <div id="aviso_evento" class="aviso_evento">
+        <div class="crear_evento">
+            <h1>Crea un Evento</h1>
+            <div class="informacion_evento">
+                <div id="info">
+                    <h2>Título</h2>
+                    <h2>Fecha</h2>                
+                    <h2>Dirección</h2>
+                    <h2>Cupos Disponibles</h2>
+                    <h2>Hora</h2>
+                    <h2>Número de Contacto</h2>
+                </div>
+                <form id="inputs">
+                    <input type="text" name="titulo" id="titulo_evento" required>
+                    <input type="date" name="fecha" id="fecha_evento" required>
+                    <input type="text" name="titulo" id="direccion_evento" required>
+                    <input type="number" name="titulo" id="cupos_evento" required>
+                    <input type="time" name="titulo" id="hora_evento" required>
+                    <input type="tel" name="titulo" id="numero_contacto_evento" pattern="[0-9]{10}" required>
+                </form>
+                <div id="descripcion">
+                    <h2>Descripcion</h2>
+                    <textarea name="descripcion_evento" id="desc_evento"></textarea>
+                </div>
+            </div>
+            <div id="botones_evento">
+                <button id="publicar_evento" type="submit">Publicar</button>
+                <button id="cancelar_evento">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <div id="aviso_evento_creado" class="aviso_evento_creado">
+        <div class="container">
+            <p>¡Tu evento ha sido publicado!</p>
+            <p>Aguarda a las notificaciones</p>
+            <button id="cerrar_ventana_evento_creado">Aceptar</button>
+        </div>
+    </div>
+    <script src="../emer_event.js"></script>
+    <script src="../emer_event_confirm.js"></script>
+    <script src="../evento_pag.js"></script>
+    <footer>
+        <img src="../img/logo_blanco.png" alt="logo_pag">
+        <img src="../img/redes.webp" alt="logo_pag">
+        <p>¡Gracias por visitarnos!</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

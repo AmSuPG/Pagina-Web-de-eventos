@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", serif;
+}
+:root{
+    --darkblue: #0424d9;
+    --persianblue: #213E60;
+    --azureradiance: #1675f5;
+    --pictonblue: #3d8af2;
+    --blue: #add8e6;
+    --blueammi: #6494e7;
+    --black: #0d0d0d;
+    --orange: #f15a24;
+    --white: #e6e6e6;
+    --gray: #aaaaaa;
+}
+header{
+    background-color: var(--persianblue);
+    width: 100%;
+    padding: 5px;
+}
+body{
+    background: linear-gradient(-45deg, #616fc3, #7c9ecb, #4b71a3, #618bcb);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.cabecera, #usuario_boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+img{
+    margin-left: 5%;
+    width: 180px;   
+}
+#usuario_boton{
+    gap: 2vh;
+    margin-right: 5%;
+}
+#usuario_boton p{
+    color: var(--white);
+    font-size: 3vh;
+}
+#icono_usuario{
+    color: var(--white);
+    font-size: 6vh;
+}
+.perfil{
+    padding: 3vh;
+    margin: 2% 20%;
+    background-color: var(--persianblue);
+    box-shadow: 10px 5px 5px white;
+    border-radius: 15px;
+}
+
+#foto_usuario{
+    display: inline-block;
+    position: absolute;
+    font-size: 11vh;
+}
+.perfil h2, .perfil p{
+    font-size: 20px;
+    margin-left: 15vh;
+    color: var(--white);
+}
+#tit_mis_eventos{
+    margin-left: 15vh;
+    margin-bottom: 24px;
+}
+#eventos_perfil {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 16px;
+    justify-items: center;
+    margin: 0;
+}
+#mis_eventos{
+    width: 400px;
+    padding: 20px;
+    background-color: var(--persianblue);
+    color: var(--white);
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px white;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--persianblue);
+    padding: 10px;
+    color: var(--white);
+    margin-top: 20px;
+    gap: 200px;
+    align-items: center;
+    
+  }
+
